@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zybooks.lightsout.MainActivity">
+
+    <GridLayout
+        android:id="@+id/light_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_margin="25dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+        <Button style="@style/LightButton" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/new_game_button"
+        style="@style/GameOptionButton"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_game"
+        android:onClick="onNewGameClick"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/light_grid" />
+
+    <Button
+        android:id="@+id/help_button"
+        style="@style/GameOptionButton"
+        android:text="@string/help_button"
+        android:onClick="onHelpClick"
+        app:layout_constraintLeft_toLeftOf="@id/new_game_button"
+        app:layout_constraintRight_toRightOf="@id/new_game_button"
+        app:layout_constraintTop_toBottomOf="@id/new_game_button" />
+
+    <Button
+        android:id="@+id/change_color_button"
+        style="@style/GameOptionButton"
+        android:text="@string/color_button"
+        android:onClick="onChangeColorClick"
+        app:layout_constraintLeft_toLeftOf="@id/new_game_button"
+        app:layout_constraintRight_toRightOf="@id/new_game_button"
+        app:layout_constraintTop_toBottomOf="@id/help_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

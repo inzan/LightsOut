@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lights Out</string>
+    <string name="new_game">New Game</string>
+    <string name="congrats">Congratulations!</string>
+    <string name="help_button">Help</string>
+    <string name="help_instructions">Turn off all the lights to win!</string>
+    <string name="light_bulb">Light bulb</string>
+    <string name="color_button">Change Color</string>
+    <string name="choose_color">Choose a color:</string>
+</resources>

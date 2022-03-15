@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:text="@string/choose_color" />
+
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton android:id="@+id/radio_red"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/red"
+            android:onClick="onColorSelected" />
+
+        <RadioButton android:id="@+id/radio_orange"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/orange"
+            android:onClick="onColorSelected" />
+
+        <RadioButton android:id="@+id/radio_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/yellow"
+            android:onClick="onColorSelected" />
+
+        <RadioButton android:id="@+id/radio_green"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/green"
+            android:onClick="onColorSelected" />
+    </RadioGroup>
+
+</LinearLayout>
